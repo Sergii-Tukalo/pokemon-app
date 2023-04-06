@@ -77,12 +77,12 @@ export const PokemonPage = () => {
         )}
       </ul>
       {isFetching ||
-        (!search && (
+        (!search && !type ? (
           <PaginationElement
             countPokemons={countPokemons}
             currentPage={currentPage}
           />
-        ))}
+        ) : null)}
     </main>
   );
 };
