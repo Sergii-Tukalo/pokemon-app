@@ -1,0 +1,172 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .spinner-border {
+    width: 60px;
+    height: 60px;
+    border-width: 7px;
+  }
+}
+
+.search__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  input {}
+}
+
+.pokemons {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 30px;
+    margin-bottom: 30px;
+    // height: 100vh;
+  }
+
+  &__item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  &__link {
+    text-decoration: none;
+    position: relative;
+  }
+
+  &__type {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  &__name {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ff8282;
+    bottom: 5px;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__img {
+    background-color: #ddcdcd;
+    border-radius: 5px;
+    padding: 30px;
+  }
+
+  &__filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    span {
+      border-radius: 5px;
+      display: inline-block;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-weight: 500;
+
+      &.active {
+        opacity: 0.8;
+        outline: 2px solid black;
+      }
+    }
+  }
+}
+
+.normal {
+  background-color: #d9d9d9;
+}
+
+.fighting {
+  background-color: #d56723;
+}
+
+.flying {
+  background-color: #a7836d;
+}
+
+.poison {
+  background-color: #b97fc9;
+}
+
+.ground {
+  background-color: #ab9842;
+}
+
+.rock {
+  background-color: #a38c21;
+}
+
+.bug {
+  background-color: #719f3f;
+}
+
+.ghost {
+  background-color: #7b62a3;
+}
+
+.steel {
+  background-color: #6f6f6f;
+}
+
+.fire {
+  background-color: #fd7d24;
+}
+
+.water {
+  background-color: #4592c4;
+}
+
+.grass {
+  background-color: #47ab57;
+}
+
+.electric {
+  background-color: #eed535;
+}
+
+.psychic {
+  background-color: #f366b9;
+}
+
+.ice {
+  background-color: #34586f;
+}
+
+.dragon {
+  background-color: #f06d56;
+}
+
+.dark {
+  background-color: rgb(131, 130, 130);
+}
+
+.fairy {
+  background-color: red;
+}
+
+.unknown {
+  background-color: rgb(107, 90, 90);
+}
+
+.shadow {
+  background-color: rgb(91, 90, 90);
+}

@@ -1,0 +1,26 @@
+.navigation {
+  margin-bottom: 20px;
+
+  .logo {
+    text-decoration: none;
+    color: white;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  &__list {
+    column-gap: 20px;
+  }
+
+  &__item {
+    text-decoration: none;
+    color: white;
+
+    &.active,
+    &:hover {
+      color: #ffc800;
+    }
+  }
+}

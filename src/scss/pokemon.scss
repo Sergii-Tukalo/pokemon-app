@@ -1,0 +1,21 @@
+.pokemon {
+  &__name {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__img {
+    &-wrapper {
+      position: relative;
+      height: 100%;
+    }
+  }
+
+  .pokemons__img {
+    min-width: 300px;
+  }
+
+  &__inner {
+    display: flex;
+  }
+}
