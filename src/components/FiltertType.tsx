@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import { useDispatch } from 'react-redux';
 import { setType } from '../reducers/reducers';
 import { useGetTypePokemons } from '../hooks/useGetTypePokemons';
@@ -8,7 +8,7 @@ export const FiltertType = () => {
   const allTypes = useGetTypePokemons();
   const dispatch = useDispatch();
 
-  const onFilterHandler = (name: string, e) => {
+  const onFilterHandler = (name: string, e: MouseEvent<HTMLElement>) => {
     const type = document.querySelectorAll('.type');
 
     for (const item of type) {
@@ -16,8 +16,8 @@ export const FiltertType = () => {
         ? item.classList.toggle('active')
         : item.classList.remove('active');
     }
-
-    e.target.classList.contains('active')
+    const el = e.target as Element;
+    el.classList.contains('active')
       ? dispatch(setType(name))
       : dispatch(setType(''));
   };

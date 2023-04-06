@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { setAllPokemons, setFetching } from '../reducers/reducers';
 import { PokemonType, stateReducer } from '../types/types';
 
-const defUrl = 'https://pokeapi.co/api/v2/pokemon?offset=20&limit=100';
+const defUrl = 'https://pokeapi.co/api/v2/pokemon?offset=20&limit=1000';
 
 export const useGetAllPokemons = () => {
   const dispatch = useDispatch();
