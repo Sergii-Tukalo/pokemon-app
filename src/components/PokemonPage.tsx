@@ -58,7 +58,11 @@ export const PokemonPage = () => {
                           <img
                             loading="lazy"
                             className="pokemons__img"
-                            src={img ? img : '../img.png'}
+                            src={
+                              img
+                                ? img
+                                : 'https://www.transparentpng.com/thumb/pokemon/JGyfIw-pokemon-logo-png.png'
+                            }
                             alt=""
                           />
                           <div className="pokemons__name">{name}</div>

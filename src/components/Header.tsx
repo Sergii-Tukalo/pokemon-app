@@ -17,7 +17,7 @@ export const Header = () => {
           to="/"
         >
           <img
-            src="img.png"
+            src="https://www.transparentpng.com/thumb/pokemon/JGyfIw-pokemon-logo-png.png"
             alt="logo"
           />
         </NavLink>
